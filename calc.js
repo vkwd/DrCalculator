@@ -1,4 +1,4 @@
-unction calculate(BP) {
+function calculate(BP) {
         var dr = 0.775;
         var drp = 0.759;
         //alert (dr);
