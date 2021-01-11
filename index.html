@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="drinc.css" />
+    <!-- <script type="text/javascript">
+        function calculate(BP) {
+            var bp = parseInt(document.BP.basic_pension.value);
+            var dr = 0.775;
+            var drp = 0.759;
+            var gp = bp + bp * dr;
+            var gpp = bp + bp * drp;
+            var gpp = bp + bp * drp;
+
+            //alert (dr);
+            //alert(DA_DR);
+            document.BP.DA_DR.value = dr;
+            //var bp = parseInt(document.BP.basic_pension.value);
+            //var bp=document.getElementByID("basic_pension").value;
+            //alert(bp);
+            //var pp=(2/3)*bp
+            //document.BP.PP.value=pp;
+            //alert(pp);
+
+            document.BP.GPension.value = Math.ceil(gp);
+            //alert(gp);
+            var gpp = bp + bp * drp;
+
+            document.BP.GOL.value = Math.ceil(gp - gpp);
+        }
+    </script>
+    > -->
+</head>
+
+<body>
+    <div class="content">
+        <form name="BP" id="BP">
+            <tr>
+                <th width="193" height="28" scope="row">
+                    <table width="197" border="1" bordercolor="#0066FF" cellpadding="1" cellspacing="1" style="background-color: #ffff66">
+                        <caption>
+                            &nbsp;
+                        </caption>
+                        <tr>
+                            <th height="24" colspan="2" scope="row">
+                                PENSION CALCULATOR<br /> for <br /> RBI Pensioners
+                            </th>
+                        </tr>
+                        <tr>
+                            <th width="123" height="24" scope="row">Basic Pension</th>
+                            <td width="61">
+                                <input name="basic_pension" type="text" id="basic_pension" style="background-color: #f9c" size="10" maxlength="6" value="0" onchange="checkform(BP)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DA/DR</th>
+                            <td>
+                                <samp>
+                    <input
+                      type="text"
+                      name="DA_DR"
+                      id="DA_DR"
+                      size="10"
+                      value="0"
+                      readonly="readonly"
+                    />
+                  </samp>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Gross Pension</th>
+                            <td>
+                                <input type="text" name="GPension" id="GPension" size="10" value="" readonly="readonly" />
+                            </td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <th scope="row">Gain over last half year</th>
+                            <td>
+                                <input type="text" name="GOL" id="GOL" size="10" value="" readonly="readonly" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" scope="row">
+                                <input type="button" name="b1" value="Calculate Pension" onclick="calculate(BP)" ; />
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </form>
+    </div>
+    <script src="drincrease.js"></script>
+</body>
+
+</html>
